@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ចំណេះដឹងទូទៅ</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=SN+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kantumruy+Pro:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="start-screen" class="screen active">
+        <h1>តោះ! ឆ្លើយសំណួរ</h1>
+        <p>មកលេងហ្គេមទាយសំណួរកម្សាន្តទាំងអស់គ្នា ដើម្បីដឹងថាអ្នកពូកែប៉ុណ្ណា!</p>
+        <button id="start-btn">ចាប់ផ្ដើម</button>
+      </div>
+
+      <!--  separate screen -->
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="question-text">Question goes here</h2>
+          <div class="quiz-info">
+            <p>
+              សំណួរ <span id="current-question">1</span> ក្នុងចំណោម
+              <span id="total-questions">5</span>
+            </p>
+            <p>ពិន្ទុ: <span id="score">0</span></p>
+          </div>
+        </div>
+
+        <div class="answers-container" id="answers-container"></div>
+
+        <div class="procress-bar">
+          <div id="procress" class="procress"></div>
+        </div>
+      </div>
+
+      <div id="result-screen" class="screen">
+        <h2>ពិន្ទុសរុប</h2>
+        <div class="result-info">
+          <p>
+            អ្នកទទួលបានពិន្ទុ <span id="final-score">0</span> ក្នុងចំណោម
+            <span id="max-score">5</span>​ សំណួរ
+          </p>
+          <div id="result-message">ល្អណាស់!</div>
+        </div>
+        <button id="restart-btn">ចាប់ផ្ដើម​ម្ដងទៀត</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
